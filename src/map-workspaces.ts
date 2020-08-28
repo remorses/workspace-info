@@ -68,7 +68,7 @@ function getError({ Type = TypeError, message, code }) {
     return Object.assign(new Type(message), { code })
 }
 
-function reverseResultMap(map: any) {
+function reverseResultMap(map: any): any {
     return new Map(Array.from(map, (item: any) => item.reverse()))
 }
 
