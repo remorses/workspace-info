@@ -1,12 +1,12 @@
-import mapWorkspaces from '@npmcli/map-workspaces'
 import fs from 'fs'
 import path from 'path'
+import { mapWorkspaces } from './map-workspaces'
 
 export async function getWorkspacePackages({
     cwd,
     packageJSON,
 }): Promise<Record<string, string>> {
-    const map: Map<string, string> = await mapWorkspaces({
+    const map = await mapWorkspaces({
         pkg: packageJSON,
         cwd,
     })

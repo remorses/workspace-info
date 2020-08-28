@@ -37,6 +37,10 @@
     },
     "dependencies": {
         "@npmcli/map-workspaces": "^0.0.0-pre.1",
+        "@npmcli/name-from-folder": "^1.0.1",
+        "glob": "^7.1.6",
+        "minimatch": "^3.0.4",
+        "read-package-json-fast": "^1.2.1",
         "tslib": "^2.0.0",
         "yargs": "^15.4.1"
     }
