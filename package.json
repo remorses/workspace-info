@@ -4,7 +4,6 @@
     "version": "0.0.1",
     "description": "yarn workspace info implementation for yarn v2 berry, lerna and npm workspaces",
     "main": "dist/index.js",
-    "module": "esm/index.js",
     "types": "dist/index.d.ts",
     "bin": "dist/bin.js",
     "mocha": {
