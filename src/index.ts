@@ -20,7 +20,7 @@ export type WorkspaceInfo = {
 export async function getWorkspaceInfo({
     cwd,
     useLerna = false,
-    includeDev = false,
+    skipDev = false,
     includePeer = false,
 }) {
     let packageJSON = await readJsonFile(
@@ -45,7 +45,7 @@ export async function getWorkspaceInfo({
                     location,
                     mismatchedWorkspaceDependencies: [],
                     workspaceDependencies: getPackageDependencies({
-                        includeDev,
+                        includeDev: !skipDev,
                         includePeer,
                         packageJSON: currentPackageJson,
                     }).filter((x) => packagesMap[x]),

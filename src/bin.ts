@@ -5,7 +5,7 @@ import { getWorkspaceInfo } from './index'
 const argv = yargs
     .option('cwd', { type: 'string' })
     .option('lerna', { type: 'boolean' })
-    .option('dev', { type: 'boolean' })
+    .option('skip-dev', { type: 'boolean' })
     .option('peer', { type: 'boolean' })
     .option('verbose', { alias: 'v', type: 'boolean' })
     .help('help').argv
@@ -13,7 +13,7 @@ const argv = yargs
 async function main() {
     const res = await getWorkspaceInfo({
         cwd: argv.cwd || process.cwd(),
-        includeDev: argv.dev,
+        skipDev: argv['skip-dev'],
         includePeer: argv.peer,
         useLerna: argv.lerna,
     })
