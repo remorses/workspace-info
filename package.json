@@ -1,7 +1,7 @@
 {
     "name": "workspace-info",
     "_": "[bump]",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "description": "yarn workspace info implementation for yarn v2 berry, lerna and npm workspaces",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
