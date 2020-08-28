@@ -12,6 +12,11 @@ yarn add workspace-info
 workspace-info --cwd tests/example-workspace
 ```
 
+by default peer dependencies are not included, use `--peer` to include them
+```
+workspace-info --peer
+```
+
 ## Usage as lib
 
 ```js
