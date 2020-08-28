@@ -6,6 +6,14 @@ yarn workspace info implementation for yarn v2 berry, lerna and npm workspaces
 yarn add workspace-info
 ```
 
+## Usage as cli
+
+```
+workspace-info --cwd tests/example-workspace
+```
+
+## Usage as lib
+
 ```js
 import { getWorkspaceInfo } from 'workspace-info'
 

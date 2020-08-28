@@ -38,7 +38,7 @@ export async function getWorkspaceInfo({
         Object.keys(packagesMap).map(async (k) => {
             const location = packagesMap[k]
             const currentPackageJson = await readJsonFile(
-                path.resolve(cwd, location, 'package.json'),
+                path.resolve(location, 'package.json'),
             )
             return {
                 [k]: {
