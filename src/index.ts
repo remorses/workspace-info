@@ -10,7 +10,7 @@ type WorkspacePackage = {
     location: string
     workspaceDependencies: string[]
     // TODO what is mismatchedWorkspaceDependencies?
-    mismatchedWorkspaceDependencies?: string[]
+    mismatchedWorkspaceDependencies: string[]
 }
 
 export type WorkspaceInfo = {
