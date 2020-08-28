@@ -1,6 +1,6 @@
 # workspace-info
 
-yarn workspace info implementation for yarn v2 berry, lerna and npm workspaces
+`yarn workspace info --json` implementation for yarn v2 berry, lerna and npm workspaces
 
 ```
 yarn add workspace-info
